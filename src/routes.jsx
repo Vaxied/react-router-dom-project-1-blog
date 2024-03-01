@@ -1,17 +1,17 @@
 const routes = []
 
 routes.push({
-    index: 0,
+    id: 1,
     to: '/',
     text: 'HomePage',
 })
 routes.push({
-    index: 1,
+    id: 2,
     to: '/blog',
     text: 'BlogPage',
 })
 routes.push({
-    index: 2,
+    id: 3,
     to: '/profile',
     text: 'ProfilePage',
 })
