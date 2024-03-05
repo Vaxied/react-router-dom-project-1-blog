@@ -15,5 +15,15 @@ routes.push({
     to: '/profile',
     text: 'ProfilePage',
 })
+routes.push({
+    id: 4,
+    to: '/login',
+    text: 'LoginPage',
+})
+routes.push({
+    id: 5,
+    to: '/logout',
+    text: 'LogoutPage',
+})
 
 export default routes
