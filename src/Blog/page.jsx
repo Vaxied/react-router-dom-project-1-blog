@@ -1,11 +1,11 @@
-/* eslint-disable react/prop-types */
 import { Link, Outlet } from 'react-router-dom'
 import { blogdata } from './blogdata'
+import PropTypes from 'prop-types'
 
 function Blog() {
     return (
         <>
-            <div>BlogPage</div>
+            <h1>Blog</h1>
             <Outlet />
             <ul>
                 {blogdata.map((post) => (
@@ -19,6 +19,9 @@ function Blog() {
 }
 
 function BlogLink({ post }) {
+    BlogLink.propTypes = {
+        post: PropTypes.object,
+    }
     return (
         <li>
             <Link to={post.slug}>{post.title}</Link>
