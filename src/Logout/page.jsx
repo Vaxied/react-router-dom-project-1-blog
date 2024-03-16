@@ -5,8 +5,8 @@ function Logout() {
     const auth = useAuth()
     const navigate = useNavigate()
 
-    function logout() {
-        auth.logout()
+    function handleLogout() {
+        auth.onLogout()
         navigate('/')
     }
 
@@ -14,7 +14,7 @@ function Logout() {
         <>
             <h1>Logout</h1>
             <p>Are you sure?</p>
-            <button onClick={logout}>Logout</button>
+            <button onClick={handleLogout}>Logout</button>
         </>
     )
 }
